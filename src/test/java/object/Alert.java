@@ -22,8 +22,8 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""),
-				alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace(",", ""),
+				alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace(",", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}

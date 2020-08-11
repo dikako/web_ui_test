@@ -58,6 +58,8 @@ public class Test_Login extends Setup {
 		input.byId("username", username);
 		input.byId("password", password);
 		button.byId("btnLogin");
+		Thread.sleep(5000);
+		
 		alerts.byId("swal2-content", alertText);
 	}
 
@@ -107,6 +109,8 @@ public class Test_Login extends Setup {
 		input.byId("username", username);
 		input.byId("password", password);
 		button.byId("btnLogin");
+		Thread.sleep(5000);
+		
 		alerts.byXpath("//small[@class='text-danger fixed']", alertText);
 	}
 
@@ -125,6 +129,8 @@ public class Test_Login extends Setup {
 		input.byId("username", username);
 		input.byId("password", password);
 		button.byId("btnLogin");
+		Thread.sleep(5000);
+		
 		alerts.byXpath("//small[@class='text-danger']", alertText);
 	}
 
@@ -167,8 +173,7 @@ public class Test_Login extends Setup {
 
 		button.byXpath("//i[@class='fas fa-bars']");
 		Thread.sleep(5000);
-
-		button.byId("button-login");
+		
 		input.byId("username", username);
 		input.byId("password", password);
 		button.byId("btnLogin");
