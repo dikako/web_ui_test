@@ -1,0 +1,1726 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>119/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 08 13:39:52 ICT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>6201 seconds (6201420 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_live_event_after_login()'><b>chat_test_live_event_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bDcexC}, goog:chromeOptions: {debuggerAddress: localhost:39281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 129d7635fd4188a2c418344e749...}
+Session ID: 129d7635fd4188a2c418344e749feef7
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace738087381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace738087381'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bDcexC}, goog:chromeOptions: {debuggerAddress: localhost:39281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 129d7635fd4188a2c418344e749...}
+Session ID: 129d7635fd4188a2c418344e749feef7
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>72</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_live_event_after_login()'><b>chat_test_live_event_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.y94zth}, goog:chromeOptions: {debuggerAddress: localhost:34089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 21c157db00dd02940ca47182e32...}
+Session ID: 21c157db00dd02940ca47182e32bc785
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683963531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1683963531'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.y94zth}, goog:chromeOptions: {debuggerAddress: localhost:34089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 21c157db00dd02940ca47182e32...}
+Session ID: 21c157db00dd02940ca47182e32bc785
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>74</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_live_event_after_login()'><b>chat_test_live_event_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.8Nd57a}, goog:chromeOptions: {debuggerAddress: localhost:41023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c20157be87816c0dd0ce64ace87...}
+Session ID: c20157be87816c0dd0ce64ace873085f
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace516889064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace516889064'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.8Nd57a}, goog:chromeOptions: {debuggerAddress: localhost:41023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c20157be87816c0dd0ce64ace87...}
+Session ID: c20157be87816c0dd0ce64ace873085f
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>71</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_live_event_after_login()'><b>chat_test_live_event_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.Dk193F}, goog:chromeOptions: {debuggerAddress: localhost:45959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 951a6f9ed8a48b497d25a329995...}
+Session ID: 951a6f9ed8a48b497d25a3299952593f
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace372523345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace372523345'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.Dk193F}, goog:chromeOptions: {debuggerAddress: localhost:45959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 951a6f9ed8a48b497d25a329995...}
+Session ID: 951a6f9ed8a48b497d25a3299952593f
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>71</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Continue_Watching.continue_watching_from_exclusive()'><b>continue_watching_from_exclusive</b><br>Test class: testcases.Test_Continue_Watching<br>Parameters: dikakoko04@gmail.com, dikakoko</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.close&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PUN8V3}, goog:chromeOptions: {debuggerAddress: localhost:37275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: ad4a76ba79870055b965b0af071...}
+Session ID: ad4a76ba79870055b965b0af071efb31
+*** Element info: {Using=class name, value=close}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byClass(Button.java:52)
+	at testcases.Test_Continue_Watching.continue_watching_from_exclusive(Test_Continue_Watching.java:53)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1829553277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829553277'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.close&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PUN8V3}, goog:chromeOptions: {debuggerAddress: localhost:37275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: ad4a76ba79870055b965b0af071...}
+Session ID: ad4a76ba79870055b965b0af071efb31
+*** Element info: {Using=class name, value=close}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byClass(Button.java:52)
+	at testcases.Test_Continue_Watching.continue_watching_from_exclusive(Test_Continue_Watching.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>128</td>
+<td>testcases.Test_Continue_Watching@4b3c354a</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 2, Photo</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;exclusive-item nav-item&quot;&gt;...&lt;/li&gt; is not clickable at point (126, 89). Other element would receive the click: &lt;div class=&quot;default-loader &quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.E6xFX5}, goog:chromeOptions: {debuggerAddress: localhost:41127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 377338150cfd9c36e072ae669b6...}
+Session ID: 377338150cfd9c36e072ae669b6e5365
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at object.Button.byClassByIndex(Button.java:232)
+	at testcases.Test_Exclusive.exclusive_list_tab_menu_klik(Test_Exclusive.java:57)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1843837686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1843837686'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;exclusive-item nav-item&quot;&gt;...&lt;/li&gt; is not clickable at point (126, 89). Other element would receive the click: &lt;div class=&quot;default-loader &quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.E6xFX5}, goog:chromeOptions: {debuggerAddress: localhost:41127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 377338150cfd9c36e072ae669b6...}
+Session ID: 377338150cfd9c36e072ae669b6e5365
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at object.Button.byClassByIndex(Button.java:232)
+	at testcases.Test_Exclusive.exclusive_list_tab_menu_klik(Test_Exclusive.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>5</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Radio.radio_integration()'><b>radio_integration</b><br>Test class: testcases.Test_Radio</td>
+<td><div><pre>java.lang.AssertionError
+	at testcases.Test_Radio.radio_integration(Test_Radio.java:36)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace600185883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace600185883'><pre>java.lang.AssertionError
+	at testcases.Test_Radio.radio_integration(Test_Radio.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>11</td>
+<td>testcases.Test_Radio@31e75d13</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_page2_validate_birthday()'><b>register_page2_validate_birthday</b><br>Test class: testcases.Test_Register</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.header\-nav\-verif&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.DNA6HR}, goog:chromeOptions: {debuggerAddress: localhost:35585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cdaf20aa62fe7903c81e15c2280...}
+Session ID: cdaf20aa62fe7903c81e15c2280af5de
+*** Element info: {Using=class name, value=header-nav-verif}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Alert.byClass(Alert.java:32)
+	at testcases.Test_Register.register_page2_validate_birthday(Test_Register.java:103)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914575839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914575839'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.header\-nav\-verif&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.DNA6HR}, goog:chromeOptions: {debuggerAddress: localhost:35585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cdaf20aa62fe7903c81e15c2280...}
+Session ID: cdaf20aa62fe7903c81e15c2280af5de
+*** Element info: {Using=class name, value=header-nav-verif}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Alert.byClass(Alert.java:32)
+	at testcases.Test_Register.register_page2_validate_birthday(Test_Register.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>30</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Sticky_Ads_Homepage.sticky_ads()'><b>sticky_ads</b><br>Test class: testcases.Test_Sticky_Ads_Homepage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.j5NdH7}, goog:chromeOptions: {debuggerAddress: localhost:36213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f5426662213c51317df482adce9...}
+Session ID: f5426662213c51317df482adce90ba1b
+*** Element info: {Using=id, value=google_image_div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads(Test_Sticky_Ads_Homepage.java:25)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace718609316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace718609316'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.j5NdH7}, goog:chromeOptions: {debuggerAddress: localhost:36213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f5426662213c51317df482adce9...}
+Session ID: f5426662213c51317df482adce90ba1b
+*** Element info: {Using=id, value=google_image_div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads(Test_Sticky_Ads_Homepage.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>74</td>
+<td>testcases.Test_Sticky_Ads_Homepage@b968a76</td></tr>
+<tr>
+<td title='testcases.Test_Sticky_Ads_Homepage.sticky_ads_Scroll_Buttom()'><b>sticky_ads_Scroll_Buttom</b><br>Test class: testcases.Test_Sticky_Ads_Homepage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ch4zRb}, goog:chromeOptions: {debuggerAddress: localhost:40855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: eb9833b6149b663aae6dedf235c...}
+Session ID: eb9833b6149b663aae6dedf235c0f30e
+*** Element info: {Using=id, value=google_image_div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads_Scroll_Buttom(Test_Sticky_Ads_Homepage.java:42)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace664896563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace664896563'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ch4zRb}, goog:chromeOptions: {debuggerAddress: localhost:40855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: eb9833b6149b663aae6dedf235c...}
+Session ID: eb9833b6149b663aae6dedf235c0f30e
+*** Element info: {Using=id, value=google_image_div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads_Scroll_Buttom(Test_Sticky_Ads_Homepage.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>44</td>
+<td>testcases.Test_Sticky_Ads_Homepage@b968a76</td></tr>
+<tr>
+<td title='testcases.Test_Chat.test_chat_live_event__before_login()'><b>test_chat_live_event__before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.hyLgvz}, goog:chromeOptions: {debuggerAddress: localhost:34173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a6d41691e1a388edf55c94b2d1b...}
+Session ID: a6d41691e1a388edf55c94b2d1b6f5b8
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771691170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771691170'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.hyLgvz}, goog:chromeOptions: {debuggerAddress: localhost:34173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a6d41691e1a388edf55c94b2d1b...}
+Session ID: a6d41691e1a388edf55c94b2d1b6f5b8
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>86</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.test_chat_live_event__before_login()'><b>test_chat_live_event__before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PzBDbJ}, goog:chromeOptions: {debuggerAddress: localhost:35259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f37062deb3927212f688a0a11ca...}
+Session ID: f37062deb3927212f688a0a11ca75646
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1235413102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235413102'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PzBDbJ}, goog:chromeOptions: {debuggerAddress: localhost:35259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f37062deb3927212f688a0a11ca...}
+Session ID: f37062deb3927212f688a0a11ca75646
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>45</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.test_chat_live_event__before_login()'><b>test_chat_live_event__before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.NXGMLf}, goog:chromeOptions: {debuggerAddress: localhost:46527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cef4a37d282f232795f4ec7783e...}
+Session ID: cef4a37d282f232795f4ec7783e78381
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974492871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974492871'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.NXGMLf}, goog:chromeOptions: {debuggerAddress: localhost:46527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cef4a37d282f232795f4ec7783e...}
+Session ID: cef4a37d282f232795f4ec7783e78381
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>44</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.test_chat_live_event__before_login()'><b>test_chat_live_event__before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.LA0S0E}, goog:chromeOptions: {debuggerAddress: localhost:37965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6bdfb4e1df048869f1fbd195171...}
+Session ID: 6bdfb4e1df048869f1fbd1951715057e
+*** Element info: {Using=id, value=btn-expand}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394210102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394210102'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.LA0S0E}, goog:chromeOptions: {debuggerAddress: localhost:37965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6bdfb4e1df048869f1fbd195171...}
+Session ID: 6bdfb4e1df048869f1fbd1951715057e
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>43</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_after_login()'><b>chat_test_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>48</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_after_login()'><b>chat_test_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>48</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_after_login()'><b>chat_test_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>43</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_after_login()'><b>chat_test_after_login</b><br>Test class: testcases.Test_Chat<br>Parameters: inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>47</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_before_login()'><b>chat_test_before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>85</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_before_login()'><b>chat_test_before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>97</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_before_login()'><b>chat_test_before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>109</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Chat.chat_test_before_login()'><b>chat_test_before_login</b><br>Test class: testcases.Test_Chat<br>Parameters: inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!</td>
+<td></td>
+<td>109</td>
+<td>testcases.Test_Chat@73ff4fae</td></tr>
+<tr>
+<td title='testcases.Test_Edit_Profile.edit_profile_form_field_alert()'><b>edit_profile_form_field_alert</b><br>Test class: testcases.Test_Edit_Profile<br>Parameters: paijo@mailinator.com, dikakoko, nickname, dikakoko, Your Nickname Has Been Taken</td>
+<td></td>
+<td>86</td>
+<td>testcases.Test_Edit_Profile@21aa6d6c</td></tr>
+<tr>
+<td title='testcases.Test_Edit_Profile.edit_profile_form_field_alert()'><b>edit_profile_form_field_alert</b><br>Test class: testcases.Test_Edit_Profile<br>Parameters: paijo@mailinator.com, dikakoko, email, dikakoko04@gmail.com, please try again, email has been taken</td>
+<td></td>
+<td>86</td>
+<td>testcases.Test_Edit_Profile@21aa6d6c</td></tr>
+<tr>
+<td title='testcases.Test_Edit_Profile.edit_profile_form_field_alert()'><b>edit_profile_form_field_alert</b><br>Test class: testcases.Test_Edit_Profile<br>Parameters: paijo@mailinator.com, dikakoko, email, email.com, Please Try Again Email Is Incorrect</td>
+<td></td>
+<td>86</td>
+<td>testcases.Test_Edit_Profile@21aa6d6c</td></tr>
+<tr>
+<td title='testcases.Test_Edit_Profile.edit_profile_phone_alert()'><b>edit_profile_phone_alert</b><br>Test class: testcases.Test_Edit_Profile<br>Parameters: paijo@mailinator.com, dikakoko, phone-number, 82278843303, please try again, phone has been taken</td>
+<td></td>
+<td>89</td>
+<td>testcases.Test_Edit_Profile@21aa6d6c</td></tr>
+<tr>
+<td title='testcases.Test_Edit_Profile.edit_profile_success_edit_fullname()'><b>edit_profile_success_edit_fullname</b><br>Test class: testcases.Test_Edit_Profile<br>Parameters: paijo@mailinator.com, dikakoko, fullname, myfullnameqcedit</td>
+<td></td>
+<td>130</td>
+<td>testcases.Test_Edit_Profile@21aa6d6c</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 0, All</td>
+<td></td>
+<td>4</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 1, Clip</td>
+<td></td>
+<td>5</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 2, Photo</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 3, Entertainment</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 4, News</td>
+<td></td>
+<td>4</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 5, Bloopers</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu()'><b>exclusive_list_tab_menu</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 6, Behind The Scenes</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 0, All</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 1, Clip</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 3, Entertainment</td>
+<td></td>
+<td>9</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 4, News</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 5, Bloopers</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_list_tab_menu_klik()'><b>exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 6, Behind The Scenes</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_list_share()'><b>exclusive_validate_list_share</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 0, facebook</td>
+<td></td>
+<td>8</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_list_share()'><b>exclusive_validate_list_share</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 1, twitter</td>
+<td></td>
+<td>10</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_list_share()'><b>exclusive_validate_list_share</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 2, line</td>
+<td></td>
+<td>9</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_list_share()'><b>exclusive_validate_list_share</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 3, email</td>
+<td></td>
+<td>13</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_list_share()'><b>exclusive_validate_list_share</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 4, whatsapp</td>
+<td></td>
+<td>13</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.exclusive_validate_thumbnail()'><b>exclusive_validate_thumbnail</b><br>Test class: testcases.Test_Exclusive</td>
+<td></td>
+<td>16</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Forget_Password.forget_password_alert()'><b>forget_password_alert</b><br>Test class: testcases.Test_Forget_Password<br>Parameters: email.com, Please Try Again Email Is Incorrect</td>
+<td></td>
+<td>19</td>
+<td>testcases.Test_Forget_Password@7829b776</td></tr>
+<tr>
+<td title='testcases.Test_Forget_Password.forget_password_alert()'><b>forget_password_alert</b><br>Test class: testcases.Test_Forget_Password<br>Parameters: 454546546565646, Please Try Again Phone Number Is Incorrect</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_Forget_Password@7829b776</td></tr>
+<tr>
+<td title='testcases.Test_Forget_Password.forget_password_alert()'><b>forget_password_alert</b><br>Test class: testcases.Test_Forget_Password<br>Parameters: iustrtqc@gmail.com, User has not been registered</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_Forget_Password@7829b776</td></tr>
+<tr>
+<td title='testcases.Test_Forget_Password.forget_password_alert()'><b>forget_password_alert</b><br>Test class: testcases.Test_Forget_Password<br>Parameters: 082222992299, User has not been registered</td>
+<td></td>
+<td>21</td>
+<td>testcases.Test_Forget_Password@7829b776</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu()'><b>homepage_center_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 0, Exclusive</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu()'><b>homepage_center_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 1, News</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu()'><b>homepage_center_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 2, Radio+</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu_direct()'><b>homepage_center_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 0, Exclusive, exclusive</td>
+<td></td>
+<td>39</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu_direct()'><b>homepage_center_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 1, News, trending</td>
+<td></td>
+<td>14</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_center_menu_direct()'><b>homepage_center_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 2, Radio+, radio</td>
+<td></td>
+<td>12</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu()'><b>homepage_footer_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 0, Home</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu()'><b>homepage_footer_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 1, Live Event</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu()'><b>homepage_footer_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 2, Live Tv</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu()'><b>homepage_footer_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 3, Library</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu()'><b>homepage_footer_menu</b><br>Test class: testcases.Test_Homepage<br>Parameters: 4, Account</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu_direct()'><b>homepage_footer_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 0, Home, </td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu_direct()'><b>homepage_footer_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 1, Live Event, live-event</td>
+<td></td>
+<td>12</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu_direct()'><b>homepage_footer_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 2, Live Tv, tv</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu_direct()'><b>homepage_footer_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 3, Library, explores</td>
+<td></td>
+<td>12</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_footer_menu_direct()'><b>homepage_footer_menu_direct</b><br>Test class: testcases.Test_Homepage<br>Parameters: 4, Account, profile</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_search_direct()'><b>homepage_search_direct</b><br>Test class: testcases.Test_Homepage</td>
+<td></td>
+<td>23</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_slider()'><b>homepage_slider</b><br>Test class: testcases.Test_Homepage</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Homepage.homepage_story()'><b>homepage_story</b><br>Test class: testcases.Test_Homepage</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Homepage@6b5894c8</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 0, All</td>
+<td></td>
+<td>17</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 1, Clip</td>
+<td></td>
+<td>16</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 2, Photo</td>
+<td></td>
+<td>22</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 3, Entertainment</td>
+<td></td>
+<td>21</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 4, News</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 5, Bloopers</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_list_tab_menu_klik()'><b>integration_exclusive_list_tab_menu_klik</b><br>Test class: testcases.Test_Exclusive<br>Parameters: 6, Behind The Scenes</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Exclusive.integration_exclusive_validate_thumbnail()'><b>integration_exclusive_validate_thumbnail</b><br>Test class: testcases.Test_Exclusive</td>
+<td></td>
+<td>34</td>
+<td>testcases.Test_Exclusive@2611b9a3</td></tr>
+<tr>
+<td title='testcases.Test_Mylist.integration_mylist_after_login_library()'><b>integration_mylist_after_login_library</b><br>Test class: testcases.Test_Mylist<br>Parameters: dikakoko04@gmail.com, dikakoko</td>
+<td></td>
+<td>141</td>
+<td>testcases.Test_Mylist@2f9a01c1</td></tr>
+<tr>
+<td title='testcases.Test_Live_Event.live_event()'><b>live_event</b><br>Test class: testcases.Test_Live_Event<br>Parameters: 0, Live Event</td>
+<td></td>
+<td>19</td>
+<td>testcases.Test_Live_Event@3f446bef</td></tr>
+<tr>
+<td title='testcases.Test_Live_Event.live_event()'><b>live_event</b><br>Test class: testcases.Test_Live_Event<br>Parameters: 1, Missed Event</td>
+<td></td>
+<td>28</td>
+<td>testcases.Test_Live_Event@3f446bef</td></tr>
+<tr>
+<td title='testcases.Test_Live_Event.live_event_klik_live_event()'><b>live_event_klik_live_event</b><br>Test class: testcases.Test_Live_Event<br>Parameters: 0, Live Event</td>
+<td></td>
+<td>42</td>
+<td>testcases.Test_Live_Event@3f446bef</td></tr>
+<tr>
+<td title='testcases.Test_Live_Event.live_event_klik_live_event()'><b>live_event_klik_live_event</b><br>Test class: testcases.Test_Live_Event<br>Parameters: 1, Missed Event</td>
+<td></td>
+<td>51</td>
+<td>testcases.Test_Live_Event@3f446bef</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_list_tab_livetv()'><b>live_tv_list_tab_livetv</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 0, RCTI</td>
+<td></td>
+<td>20</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_list_tab_livetv()'><b>live_tv_list_tab_livetv</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 1, MNCTV</td>
+<td></td>
+<td>25</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_list_tab_livetv()'><b>live_tv_list_tab_livetv</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 2, GTV</td>
+<td></td>
+<td>37</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_list_tab_livetv()'><b>live_tv_list_tab_livetv</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 3, INEWS</td>
+<td></td>
+<td>28</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_live_and_cathup()'><b>live_tv_live_and_cathup</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 0, Live</td>
+<td></td>
+<td>32</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Live_Tv.live_tv_live_and_cathup()'><b>live_tv_live_and_cathup</b><br>Test class: testcases.Test_Live_Tv<br>Parameters: 1, Catch Up TV</td>
+<td></td>
+<td>41</td>
+<td>testcases.Test_Live_Tv@a5b0b86</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_password()'><b>login_alert_password</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect</td>
+<td></td>
+<td>32</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_password()'><b>login_alert_password</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, passwordslah, Please Try Again Password Is Incorrect</td>
+<td></td>
+<td>30</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_popup()'><b>login_alert_popup</b><br>Test class: testcases.Test_Login<br>Parameters: dixosgadpoyt@gmail.com, passwordslah, User has not been registered</td>
+<td></td>
+<td>29</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_popup()'><b>login_alert_popup</b><br>Test class: testcases.Test_Login<br>Parameters: 628229098776544, passwordslah, User has not been registered</td>
+<td></td>
+<td>29</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_username()'><b>login_alert_username</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko.com, passwordslah, Please Try Again Email Is Incorrect</td>
+<td></td>
+<td>30</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_username()'><b>login_alert_username</b><br>Test class: testcases.Test_Login<br>Parameters: 8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect</td>
+<td></td>
+<td>29</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout()'><b>login_logout</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>74</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout()'><b>login_logout</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>75</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_Continue_Watching()'><b>login_logout_from_Continue_Watching</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>100</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_Continue_Watching()'><b>login_logout_from_Continue_Watching</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>102</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_account()'><b>login_logout_from_account</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>93</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_account()'><b>login_logout_from_account</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>94</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_history()'><b>login_logout_from_history</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>108</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_history()'><b>login_logout_from_history</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>102</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_mylist()'><b>login_logout_from_mylist</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>96</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout_from_mylist()'><b>login_logout_from_mylist</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>91</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_succes()'><b>login_succes</b><br>Test class: testcases.Test_Login<br>Parameters: dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>40</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_succes()'><b>login_succes</b><br>Test class: testcases.Test_Login<br>Parameters: 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>40</td>
+<td>testcases.Test_Login@33e01298</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_download()'><b>menu_account_not_login_button_download</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>22</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_login()'><b>menu_account_not_login_button_login</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>28</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: tnc, Terms and Conditions</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: privacy-policy, Privacy Policy</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: contact-us, Contact Us</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: faq, Faq</td>
+<td></td>
+<td>18</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_scan_qrcode()'><b>menu_account_not_login_button_scan_qrcode</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: history, Sign Up, Sign In</td>
+<td></td>
+<td>26</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: mylist, Sign Up, Sign In</td>
+<td></td>
+<td>23</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: continue-watching, Sign Up, Sign In</td>
+<td></td>
+<td>22</td>
+<td>testcases.Test_List_Menu_Account@1433046b</td></tr>
+<tr>
+<td title='testcases.Test_Mylist.mylist_after_login_library()'><b>mylist_after_login_library</b><br>Test class: testcases.Test_Mylist<br>Parameters: dikakoko04@gmail.com, dikakoko</td>
+<td></td>
+<td>101</td>
+<td>testcases.Test_Mylist@2f9a01c1</td></tr>
+<tr>
+<td title='testcases.Test_News.news_validate_add_kanal()'><b>news_validate_add_kanal</b><br>Test class: testcases.Test_News</td>
+<td></td>
+<td>44</td>
+<td>testcases.Test_News@78fb9a67</td></tr>
+<tr>
+<td title='testcases.Test_News.news_validate_default_kanal()'><b>news_validate_default_kanal</b><br>Test class: testcases.Test_News<br>Parameters: 0, Berita Utama</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_News@78fb9a67</td></tr>
+<tr>
+<td title='testcases.Test_News.news_validate_default_kanal()'><b>news_validate_default_kanal</b><br>Test class: testcases.Test_News<br>Parameters: 1, Terkini</td>
+<td></td>
+<td>7</td>
+<td>testcases.Test_News@78fb9a67</td></tr>
+<tr>
+<td title='testcases.Test_News.news_validate_default_kanal()'><b>news_validate_default_kanal</b><br>Test class: testcases.Test_News<br>Parameters: 2, Populer</td>
+<td></td>
+<td>11</td>
+<td>testcases.Test_News@78fb9a67</td></tr>
+<tr>
+<td title='testcases.Test_Radio.radio_validate_url()'><b>radio_validate_url</b><br>Test class: testcases.Test_Radio</td>
+<td></td>
+<td>6</td>
+<td>testcases.Test_Radio@31e75d13</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_alert_email()'><b>register_alert_email</b><br>Test class: testcases.Test_Register<br>Parameters: dikakoko04@gmail.com, password, password, please try again, email has been taken</td>
+<td></td>
+<td>33</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_alert_email()'><b>register_alert_email</b><br>Test class: testcases.Test_Register<br>Parameters: rtgsfad.com, password, password, Please Try Again Email Is Incorrect</td>
+<td></td>
+<td>34</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_alert_phone()'><b>register_alert_phone</b><br>Test class: testcases.Test_Register<br>Parameters: 00909089897897, password, password, Please Try Again Phone Number Is Incorrect</td>
+<td></td>
+<td>39</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_alert_phone()'><b>register_alert_phone</b><br>Test class: testcases.Test_Register<br>Parameters: 82278843303, password, password, please try again, phone has been taken</td>
+<td></td>
+<td>38</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_email_alert_password1()'><b>register_email_alert_password1</b><br>Test class: testcases.Test_Register<br>Parameters: nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters</td>
+<td></td>
+<td>34</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_email_alert_password2()'><b>register_email_alert_password2</b><br>Test class: testcases.Test_Register<br>Parameters: nteamqcdfard@gmail.com, password, passwordBeda, Password must match</td>
+<td></td>
+<td>34</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_page2_validate_fullname()'><b>register_page2_validate_fullname</b><br>Test class: testcases.Test_Register</td>
+<td></td>
+<td>35</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_page2_validate_gender_Male()'><b>register_page2_validate_gender_Male</b><br>Test class: testcases.Test_Register<br>Parameters: Male</td>
+<td></td>
+<td>41</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_page2_validate_gender_Male()'><b>register_page2_validate_gender_Male</b><br>Test class: testcases.Test_Register<br>Parameters: Female</td>
+<td></td>
+<td>41</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_phone_alert_password1()'><b>register_phone_alert_password1</b><br>Test class: testcases.Test_Register<br>Parameters: 863436763543, kurang, kurang, Password must at least 8 characters</td>
+<td></td>
+<td>39</td>
+<td>testcases.Test_Register@54227100</td></tr>
+<tr>
+<td title='testcases.Test_Register.register_phone_alert_password2()'><b>register_phone_alert_password2</b><br>Test class: testcases.Test_Register<br>Parameters: 84534343436, password, passwordBeda, Password must match</td>
+<td></td>
+<td>39</td>
+<td>testcases.Test_Register@54227100</td></tr>
+</table><p>
+</body>
+</html>

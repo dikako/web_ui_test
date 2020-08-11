@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testcases.Test_Login"/>
+      <class name="testcases.Test_Radio"/>
+      <class name="testcases.Test_Live_Tv"/>
+      <class name="testcases.Test_Continue_Watching"/>
+      <class name="testcases.Test_News"/>
+      <class name="testcases.Test_Chat"/>
+      <class name="testcases.Test_Edit_Profile"/>
+      <class name="testcases.Test_Login_Phone_Code"/>
+      <class name="testcases.Test_Search"/>
+      <class name="testcases.Test_Sticky_Ads_Homepage"/>
+      <class name="testcases.Test_Mylist"/>
+      <class name="testcases.Test_Exclusive"/>
+      <class name="testcases.Test_Register"/>
+      <class name="testcases.Test_Homepage"/>
+      <class name="testcases.Test_List_Menu_Account"/>
+      <class name="testcases.Test_Phone_Code"/>
+      <class name="testcases.Test_Live_Event"/>
+      <class name="testcases.Test_Forget_Password"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6,203.985" tests="133" errors="0" skipped="0" failures="14">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\test-web\pwa\pwa_ui_test\target\test-classes;D:\test-web\pwa\pwa_ui_test\target\classes;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\fransiskus.setiawan\.m2\repository\jaxen\jaxen\1.2.0\jaxen-1.2.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured\3.3.0\rest-assured-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy\2.4.15\groovy-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.15\groovy-xml-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\json-path\3.3.0\json-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-json\2.4.15\groovy-json-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured-common\3.3.0\rest-assured-common-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\xml-path\3.3.0\xml-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\mail\javax.mail-api\1.5.5\javax.mail-api-1.5.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\github\bonigarcia\webdrivermanager\4.0.0\webdrivermanager-4.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0\httpclient5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0\httpcore5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0\httpcore5-h2-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\twilio\sdk\twilio\7.42.0\twilio-7.42.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\joda-time\joda-time\2.5\joda-time-2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\jsonwebtoken\jjwt\0.4\jjwt-0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.1\jackson-databind-2.9.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\bind\jaxb-api\2.2\jaxb-api-2.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\plugins\maven-clean-plugin\3.1.0\maven-clean-plugin-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.4\plexus-component-annotations-1.5.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-testng\2.7.0\allure-testng-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-descriptions-javadoc\2.7.0\allure-descriptions-javadoc-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-java-commons\2.7.0\allure-java-commons-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-api\1.0.0\allure2-model-api-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-pojo\1.0.0\allure2-model-pojo-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-jackson\1.0.0\allure2-model-jackson-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_221\bin"/>
+    <property name="sun.java.command" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire2187507470230992688\surefirebooter5900069742570727847.jar C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire2187507470230992688 2020-07-08T13-39-30_754-jvmRun1 surefire7574670830558235398tmp surefire_04053959248068520460tmp"/>
+    <property name="surefire.test.class.path" value="D:\test-web\pwa\pwa_ui_test\target\test-classes;D:\test-web\pwa\pwa_ui_test\target\classes;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\fransiskus.setiawan\.m2\repository\jaxen\jaxen\1.2.0\jaxen-1.2.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured\3.3.0\rest-assured-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy\2.4.15\groovy-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.15\groovy-xml-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\json-path\3.3.0\json-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-json\2.4.15\groovy-json-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured-common\3.3.0\rest-assured-common-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\xml-path\3.3.0\xml-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\mail\javax.mail-api\1.5.5\javax.mail-api-1.5.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\github\bonigarcia\webdrivermanager\4.0.0\webdrivermanager-4.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0\httpclient5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0\httpcore5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0\httpcore5-h2-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\twilio\sdk\twilio\7.42.0\twilio-7.42.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\joda-time\joda-time\2.5\joda-time-2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\jsonwebtoken\jjwt\0.4\jjwt-0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.1\jackson-databind-2.9.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\bind\jaxb-api\2.2\jaxb-api-2.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\plugins\maven-clean-plugin\3.1.0\maven-clean-plugin-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.4\plexus-component-annotations-1.5.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-testng\2.7.0\allure-testng-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-descriptions-javadoc\2.7.0\allure-descriptions-javadoc-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-java-commons\2.7.0\allure-java-commons-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-api\1.0.0\allure2-model-api-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-pojo\1.0.0\allure2-model-pojo-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-jackson\1.0.0\allure2-model-jackson-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\fransiskus.setiawan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_221"/>
+    <property name="basedir" value="D:\test-web\pwa\pwa_ui_test"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire2187507470230992688\surefirebooter5900069742570727847.jar;C:\Users\fransiskus.setiawan\.m2\repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_221\lib\resources.jar;C:\Program Files\Java\jre1.8.0_221\lib\rt.jar;C:\Program Files\Java\jre1.8.0_221\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_221\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_221\lib\jce.jar;C:\Program Files\Java\jre1.8.0_221\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_221\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_221\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="fransiskus.setiawan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_221\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\fransiskus.setiawan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\FRANSI~1.SET\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="D:\test-web\pwa\pwa_ui_test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.2\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\nodejs\;C:\Users\fransiskus.setiawan\android-sdks\platform-tools;C:\Go\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\k6\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\fransiskus.setiawan\scoop\shims;C:\Users\fransiskus.setiawan\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\fransiskus.setiawan\AppData\Local\Programs\Python\Python38\;C:\Users\fransiskus.setiawan\AppData\Local\Microsoft\WindowsApps;C:\Users\fransiskus.setiawan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fransiskus.setiawan\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\bin;;C:\Users\fransiskus.setiawan\go\bin;C:\Users\fransiskus.setiawan\AppData\Roaming\Composer\vendor\bin;C:\Users\fransiskus.setiawan\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.2\bin;;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_221\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="login_alert_password" classname="testcases.Test_Login" time="32.036"/>
+  <testcase name="login_alert_password" classname="testcases.Test_Login" time="30.209"/>
+  <testcase name="login_alert_username" classname="testcases.Test_Login" time="30.263"/>
+  <testcase name="login_alert_username" classname="testcases.Test_Login" time="29.771"/>
+  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="29.916"/>
+  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="29.959"/>
+  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="100.553"/>
+  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="102.622"/>
+  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="93.779"/>
+  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="94.65"/>
+  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="108.79"/>
+  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="102.233"/>
+  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="96.423"/>
+  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="91.304"/>
+  <testcase name="login_succes" classname="testcases.Test_Login" time="40.319"/>
+  <testcase name="login_succes" classname="testcases.Test_Login" time="40.51"/>
+  <testcase name="login_logout" classname="testcases.Test_Login" time="74.85"/>
+  <testcase name="login_logout" classname="testcases.Test_Login" time="75.693"/>
+  <testcase name="radio_validate_url" classname="testcases.Test_Radio" time="6.236"/>
+  <testcase name="radio_integration" classname="testcases.Test_Radio" time="11.712">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at testcases.Test_Radio.radio_integration(Test_Radio.java:36)
+]]></failure>
+    <system-out><![CDATA[Radio Test - Validate url direct
+Url Visit: https://m.rctiplus.com/
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:02:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:02:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="live_tv_list_tab_livetv" classname="testcases.Test_Live_Tv" time="20.121"/>
+  <testcase name="live_tv_list_tab_livetv" classname="testcases.Test_Live_Tv" time="25.43"/>
+  <testcase name="live_tv_list_tab_livetv" classname="testcases.Test_Live_Tv" time="37.775"/>
+  <testcase name="live_tv_list_tab_livetv" classname="testcases.Test_Live_Tv" time="28.584"/>
+  <testcase name="live_tv_live_and_cathup" classname="testcases.Test_Live_Tv" time="32.764"/>
+  <testcase name="live_tv_live_and_cathup" classname="testcases.Test_Live_Tv" time="41.624"/>
+  <testcase name="continue_watching_from_exclusive" classname="testcases.Test_Continue_Watching" time="128.39">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.close&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PUN8V3}, goog:chromeOptions: {debuggerAddress: localhost:37275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: ad4a76ba79870055b965b0af071...}&#10;Session ID: ad4a76ba79870055b965b0af071efb31&#10;*** Element info: {Using=class name, value=close}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".close"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PUN8V3}, goog:chromeOptions: {debuggerAddress: localhost:37275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: ad4a76ba79870055b965b0af071...}
+Session ID: ad4a76ba79870055b965b0af071efb31
+*** Element info: {Using=class name, value=close}
+	at testcases.Test_Continue_Watching.continue_watching_from_exclusive(Test_Continue_Watching.java:53)
+]]></failure>
+    <system-out><![CDATA[Continue Watching Test - From Exlcuisve
+Url Visit: https://m.rctiplus.com/login
+Waiting for element visibility
+Login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:06:55 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:06:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="news_validate_default_kanal" classname="testcases.Test_News" time="11.599"/>
+  <testcase name="news_validate_default_kanal" classname="testcases.Test_News" time="7.039"/>
+  <testcase name="news_validate_default_kanal" classname="testcases.Test_News" time="11.496"/>
+  <testcase name="news_validate_add_kanal" classname="testcases.Test_News" time="44.263"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="85.939"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="97.699"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="109.685"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="109.365"/>
+  <testcase name="test_chat_live_event__before_login" classname="testcases.Test_Chat" time="86.992">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.hyLgvz}, goog:chromeOptions: {debuggerAddress: localhost:34173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a6d41691e1a388edf55c94b2d1b...}&#10;Session ID: a6d41691e1a388edf55c94b2d1b6f5b8&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.hyLgvz}, goog:chromeOptions: {debuggerAddress: localhost:34173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a6d41691e1a388edf55c94b2d1b...}
+Session ID: a6d41691e1a388edf55c94b2d1b6f5b8
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+]]></failure>
+    <system-out><![CDATA[Chat Test Live Event - Test Chatting Before Login
+Url Visit: https://m.rctiplus.com/
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:18:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:18:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="test_chat_live_event__before_login" classname="testcases.Test_Chat" time="45.785">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PzBDbJ}, goog:chromeOptions: {debuggerAddress: localhost:35259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f37062deb3927212f688a0a11ca...}&#10;Session ID: f37062deb3927212f688a0a11ca75646&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PzBDbJ}, goog:chromeOptions: {debuggerAddress: localhost:35259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f37062deb3927212f688a0a11ca...}
+Session ID: f37062deb3927212f688a0a11ca75646
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+]]></failure>
+    <system-out><![CDATA[*** Test execution test_chat_live_event__before_login failed!
+test_chat_live_event__before_login failed!
+Chat Test Live Event - Test Chatting Before Login
+Url Visit: https://m.rctiplus.com/
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:20:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:20:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="test_chat_live_event__before_login" classname="testcases.Test_Chat" time="44.299">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.NXGMLf}, goog:chromeOptions: {debuggerAddress: localhost:46527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cef4a37d282f232795f4ec7783e...}&#10;Session ID: cef4a37d282f232795f4ec7783e78381&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.NXGMLf}, goog:chromeOptions: {debuggerAddress: localhost:46527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cef4a37d282f232795f4ec7783e...}
+Session ID: cef4a37d282f232795f4ec7783e78381
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+]]></failure>
+    <system-out><![CDATA[*** Test execution test_chat_live_event__before_login failed!
+test_chat_live_event__before_login failed!
+Chat Test Live Event - Test Chatting Before Login
+Url Visit: https://m.rctiplus.com/
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:21:02 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:21:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="test_chat_live_event__before_login" classname="testcases.Test_Chat" time="43.922">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.LA0S0E}, goog:chromeOptions: {debuggerAddress: localhost:37965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6bdfb4e1df048869f1fbd195171...}&#10;Session ID: 6bdfb4e1df048869f1fbd1951715057e&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.LA0S0E}, goog:chromeOptions: {debuggerAddress: localhost:37965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6bdfb4e1df048869f1fbd195171...}
+Session ID: 6bdfb4e1df048869f1fbd1951715057e
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.test_chat_live_event__before_login(Test_Chat.java:133)
+]]></failure>
+    <system-out><![CDATA[*** Test execution test_chat_live_event__before_login failed!
+test_chat_live_event__before_login failed!
+Chat Test Live Event - Test Chatting Before Login
+Url Visit: https://m.rctiplus.com/
+Waiting for element visibility
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:21:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:21:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="48.393"/>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="48.075"/>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="43.906"/>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="47.601"/>
+  <testcase name="chat_test_live_event_after_login" classname="testcases.Test_Chat" time="72.232">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bDcexC}, goog:chromeOptions: {debuggerAddress: localhost:39281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 129d7635fd4188a2c418344e749...}&#10;Session ID: 129d7635fd4188a2c418344e749feef7&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bDcexC}, goog:chromeOptions: {debuggerAddress: localhost:39281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 129d7635fd4188a2c418344e749...}
+Session ID: 129d7635fd4188a2c418344e749feef7
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+]]></failure>
+    <system-out><![CDATA[Chat Test Live Event - Test Chatting After Login
+Url Visit: https://m.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Live Event
+15
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:26:42 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:26:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_live_event_after_login" classname="testcases.Test_Chat" time="74.255">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.y94zth}, goog:chromeOptions: {debuggerAddress: localhost:34089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 21c157db00dd02940ca47182e32...}&#10;Session ID: 21c157db00dd02940ca47182e32bc785&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.y94zth}, goog:chromeOptions: {debuggerAddress: localhost:34089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 21c157db00dd02940ca47182e32...}
+Session ID: 21c157db00dd02940ca47182e32bc785
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_live_event_after_login failed!
+chat_test_live_event_after_login failed!
+Chat Test Live Event - Test Chatting After Login
+Url Visit: https://m.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Live Event
+15
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:28:10 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:28:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_live_event_after_login" classname="testcases.Test_Chat" time="71.565">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.8Nd57a}, goog:chromeOptions: {debuggerAddress: localhost:41023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c20157be87816c0dd0ce64ace87...}&#10;Session ID: c20157be87816c0dd0ce64ace873085f&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.8Nd57a}, goog:chromeOptions: {debuggerAddress: localhost:41023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c20157be87816c0dd0ce64ace87...}
+Session ID: c20157be87816c0dd0ce64ace873085f
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_live_event_after_login failed!
+chat_test_live_event_after_login failed!
+Chat Test Live Event - Test Chatting After Login
+Url Visit: https://m.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Live Event
+15
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:29:35 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:29:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_live_event_after_login" classname="testcases.Test_Chat" time="71.343">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btn\-expand&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.Dk193F}, goog:chromeOptions: {debuggerAddress: localhost:45959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 951a6f9ed8a48b497d25a329995...}&#10;Session ID: 951a6f9ed8a48b497d25a3299952593f&#10;*** Element info: {Using=id, value=btn-expand}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.Dk193F}, goog:chromeOptions: {debuggerAddress: localhost:45959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 951a6f9ed8a48b497d25a329995...}
+Session ID: 951a6f9ed8a48b497d25a3299952593f
+*** Element info: {Using=id, value=btn-expand}
+	at testcases.Test_Chat.chat_test_live_event_after_login(Test_Chat.java:111)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_live_event_after_login failed!
+chat_test_live_event_after_login failed!
+Chat Test Live Event - Test Chatting After Login
+Url Visit: https://m.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+Live Event
+15
+Button is Clicked!
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:30:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:30:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="edit_profile_form_field_alert" classname="testcases.Test_Edit_Profile" time="86.618"/>
+  <testcase name="edit_profile_form_field_alert" classname="testcases.Test_Edit_Profile" time="86.696"/>
+  <testcase name="edit_profile_form_field_alert" classname="testcases.Test_Edit_Profile" time="86.007"/>
+  <testcase name="edit_profile_phone_alert" classname="testcases.Test_Edit_Profile" time="89.9"/>
+  <testcase name="edit_profile_success_edit_fullname" classname="testcases.Test_Edit_Profile" time="130.077"/>
+  <testcase name="sticky_ads" classname="testcases.Test_Sticky_Ads_Homepage" time="74.074">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.j5NdH7}, goog:chromeOptions: {debuggerAddress: localhost:36213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f5426662213c51317df482adce9...}&#10;Session ID: f5426662213c51317df482adce90ba1b&#10;*** Element info: {Using=id, value=google_image_div}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#google_image_div"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.j5NdH7}, goog:chromeOptions: {debuggerAddress: localhost:36213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f5426662213c51317df482adce9...}
+Session ID: f5426662213c51317df482adce90ba1b
+*** Element info: {Using=id, value=google_image_div}
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads(Test_Sticky_Ads_Homepage.java:25)
+]]></failure>
+    <system-out><![CDATA[Sticky Ads Test - Validate Display Under Story
+Url Visit: https://m.rctiplus.com/
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:41:01 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:41:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="sticky_ads_Scroll_Buttom" classname="testcases.Test_Sticky_Ads_Homepage" time="44.014">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_image_div&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ch4zRb}, goog:chromeOptions: {debuggerAddress: localhost:40855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: eb9833b6149b663aae6dedf235c...}&#10;Session ID: eb9833b6149b663aae6dedf235c0f30e&#10;*** Element info: {Using=id, value=google_image_div}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#google_image_div"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ch4zRb}, goog:chromeOptions: {debuggerAddress: localhost:40855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: eb9833b6149b663aae6dedf235c...}
+Session ID: eb9833b6149b663aae6dedf235c0f30e
+*** Element info: {Using=id, value=google_image_div}
+	at testcases.Test_Sticky_Ads_Homepage.sticky_ads_Scroll_Buttom(Test_Sticky_Ads_Homepage.java:42)
+]]></failure>
+    <system-out><![CDATA[*** Test execution sticky_ads failed!
+sticky_ads failed!
+Sticky Ads Test - Validate Display Scroll Button
+Url Visit: https://m.rctiplus.com/
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:42:23 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:42:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="mylist_after_login_library" classname="testcases.Test_Mylist" time="101.832"/>
+  <testcase name="integration_mylist_after_login_library" classname="testcases.Test_Mylist" time="141.671"/>
+  <testcase name="exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="16.948"/>
+  <testcase name="integration_exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="34.34"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="8.129"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="10.979"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="9.265"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="13.559"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="13.503"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="4.351"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="5.191"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="7.561"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="7.218"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="4.42"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="8.343"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="8.848"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="7.139"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="8.079"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="5.164">
+    <failure message="element click intercepted: Element &lt;li class=&quot;exclusive-item nav-item&quot;&gt;...&lt;/li&gt; is not clickable at point (126, 89). Other element would receive the click: &lt;div class=&quot;default-loader &quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=83.0.4103.61)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.E6xFX5}, goog:chromeOptions: {debuggerAddress: localhost:41127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 377338150cfd9c36e072ae669b6...}&#10;Session ID: 377338150cfd9c36e072ae669b6e5365" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="exclusive-item nav-item">...</li> is not clickable at point (126, 89). Other element would receive the click: <div class="default-loader ">...</div>
+  (Session info: chrome=83.0.4103.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.E6xFX5}, goog:chromeOptions: {debuggerAddress: localhost:41127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 377338150cfd9c36e072ae669b6...}
+Session ID: 377338150cfd9c36e072ae669b6e5365
+	at testcases.Test_Exclusive.exclusive_list_tab_menu_klik(Test_Exclusive.java:57)
+]]></failure>
+    <system-out><![CDATA[Exclusive Test - Validate List Tab Menu Klik
+Url Visit: https://m.rctiplus.com/exclusive
+Value is Match Photo
+7
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 2:53:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 2:53:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="9.652"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="8.604"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="8.669"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="7.2"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="17.204"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="16.799"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="22.919"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="21.339"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.408"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.519"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.022"/>
+  <testcase name="register_alert_email" classname="testcases.Test_Register" time="33.99"/>
+  <testcase name="register_alert_email" classname="testcases.Test_Register" time="34.054"/>
+  <testcase name="register_email_alert_password1" classname="testcases.Test_Register" time="34.199"/>
+  <testcase name="register_email_alert_password2" classname="testcases.Test_Register" time="34.264"/>
+  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="39.568"/>
+  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="38.913"/>
+  <testcase name="register_phone_alert_password1" classname="testcases.Test_Register" time="39.241"/>
+  <testcase name="register_phone_alert_password2" classname="testcases.Test_Register" time="39.472"/>
+  <testcase name="register_page2_validate_birthday" classname="testcases.Test_Register" time="30.646">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.header\-nav\-verif&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.DNA6HR}, goog:chromeOptions: {debuggerAddress: localhost:35585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cdaf20aa62fe7903c81e15c2280...}&#10;Session ID: cdaf20aa62fe7903c81e15c2280af5de&#10;*** Element info: {Using=class name, value=header-nav-verif}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".header\-nav\-verif"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.DNA6HR}, goog:chromeOptions: {debuggerAddress: localhost:35585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cdaf20aa62fe7903c81e15c2280...}
+Session ID: cdaf20aa62fe7903c81e15c2280af5de
+*** Element info: {Using=class name, value=header-nav-verif}
+	at testcases.Test_Register.register_page2_validate_birthday(Test_Register.java:103)
+]]></failure>
+    <system-out><![CDATA[Register Test - Validate Register Page 2 Birthday
+Url Visit: https://m.rctiplus.com/register
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 3:03:31 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 3:03:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="register_page2_validate_fullname" classname="testcases.Test_Register" time="35.836"/>
+  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="41.197"/>
+  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="41.947"/>
+  <testcase name="homepage_search_direct" classname="testcases.Test_Homepage" time="23.1"/>
+  <testcase name="homepage_story" classname="testcases.Test_Homepage" time="11.603"/>
+  <testcase name="homepage_slider" classname="testcases.Test_Homepage" time="11.217"/>
+  <testcase name="homepage_center_menu" classname="testcases.Test_Homepage" time="6.73"/>
+  <testcase name="homepage_center_menu" classname="testcases.Test_Homepage" time="6.217"/>
+  <testcase name="homepage_center_menu" classname="testcases.Test_Homepage" time="7.048"/>
+  <testcase name="homepage_footer_menu" classname="testcases.Test_Homepage" time="6.378"/>
+  <testcase name="homepage_footer_menu" classname="testcases.Test_Homepage" time="6.641"/>
+  <testcase name="homepage_footer_menu" classname="testcases.Test_Homepage" time="7.181"/>
+  <testcase name="homepage_footer_menu" classname="testcases.Test_Homepage" time="6.565"/>
+  <testcase name="homepage_footer_menu" classname="testcases.Test_Homepage" time="6.861"/>
+  <testcase name="homepage_footer_menu_direct" classname="testcases.Test_Homepage" time="11.768"/>
+  <testcase name="homepage_footer_menu_direct" classname="testcases.Test_Homepage" time="12.662"/>
+  <testcase name="homepage_footer_menu_direct" classname="testcases.Test_Homepage" time="11.618"/>
+  <testcase name="homepage_footer_menu_direct" classname="testcases.Test_Homepage" time="12.473"/>
+  <testcase name="homepage_footer_menu_direct" classname="testcases.Test_Homepage" time="11.738"/>
+  <testcase name="homepage_center_menu_direct" classname="testcases.Test_Homepage" time="39.947"/>
+  <testcase name="homepage_center_menu_direct" classname="testcases.Test_Homepage" time="14.487"/>
+  <testcase name="homepage_center_menu_direct" classname="testcases.Test_Homepage" time="12.066"/>
+  <testcase name="menu_account_not_login_button_login" classname="testcases.Test_List_Menu_Account" time="28.064"/>
+  <testcase name="menu_account_not_login_button_scan_qrcode" classname="testcases.Test_List_Menu_Account" time="6.795"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="26.606"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="23.19"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="22.492"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.968"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.564"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.367"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.326"/>
+  <testcase name="menu_account_not_login_button_download" classname="testcases.Test_List_Menu_Account" time="22.811"/>
+  <testcase name="live_event" classname="testcases.Test_Live_Event" time="19.42"/>
+  <testcase name="live_event" classname="testcases.Test_Live_Event" time="28.919"/>
+  <testcase name="live_event_klik_live_event" classname="testcases.Test_Live_Event" time="42.867"/>
+  <testcase name="live_event_klik_live_event" classname="testcases.Test_Live_Event" time="51.603"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="19.884"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="18.164"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="18.529"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="21.141"/>
+</testsuite>

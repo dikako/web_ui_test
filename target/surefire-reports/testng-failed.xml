@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="testcases.Test_Login"/>
+      <class name="testcases.Test_Radio"/>
+      <class name="testcases.Test_Live_Tv"/>
+      <class name="testcases.Test_Continue_Watching"/>
+      <class name="testcases.Test_News"/>
+      <class name="testcases.Test_Chat"/>
+      <class name="testcases.Test_Edit_Profile"/>
+      <class name="testcases.Test_Sticky_Ads_Homepage"/>
+      <class name="testcases.Test_Mylist"/>
+      <class name="testcases.Test_Exclusive"/>
+      <class name="testcases.Test_Register"/>
+      <class name="testcases.Test_Homepage"/>
+      <class name="testcases.Test_List_Menu_Account"/>
+      <class name="testcases.Test_Live_Event"/>
+      <class name="testcases.Test_Forget_Password"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.Test_Sticky_Ads_Homepage">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+          <include name="sticky_ads"/>
+          <include name="sticky_ads_Scroll_Buttom"/>
+        </methods>
+      </class> <!-- testcases.Test_Sticky_Ads_Homepage -->
+      <class name="testcases.Test_News">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_News -->
+      <class name="testcases.Test_Radio">
+        <methods>
+          <include name="radio_integration"/>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Radio -->
+      <class name="testcases.Test_List_Menu_Account">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_List_Menu_Account -->
+      <class name="testcases.Test_Forget_Password">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Forget_Password -->
+      <class name="testcases.Test_Mylist">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Mylist -->
+      <class name="testcases.Test_Live_Tv">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Live_Tv -->
+      <class name="testcases.Test_Login">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Login -->
+      <class name="testcases.Test_Homepage">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Homepage -->
+      <class name="testcases.Test_Exclusive">
+        <methods>
+          <include name="done"/>
+          <include name="exclusive_list_tab_menu_klik" invocation-numbers="2"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Exclusive -->
+      <class name="testcases.Test_Live_Event">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Live_Event -->
+      <class name="testcases.Test_Chat">
+        <methods>
+          <include name="test_chat_live_event__before_login" invocation-numbers="0 1 2 3"/>
+          <include name="done"/>
+          <include name="chat_test_live_event_after_login" invocation-numbers="0 1 2 3"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Chat -->
+      <class name="testcases.Test_Register">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+          <include name="register_page2_validate_birthday"/>
+        </methods>
+      </class> <!-- testcases.Test_Register -->
+      <class name="testcases.Test_Edit_Profile">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Edit_Profile -->
+      <class name="testcases.Test_Continue_Watching">
+        <methods>
+          <include name="continue_watching_from_exclusive" invocation-numbers="0"/>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Continue_Watching -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
