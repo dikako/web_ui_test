@@ -7,7 +7,7 @@ public class Url {
 
 //	 String baseUrl = "https://rc-webm.rctiplus.com";
 
-	String baseUrl = "https://m.rctiplus.com";
+	String baseUrl = "https://rctiplus.com";
 
 	public Url(WebDriver driver) {
 		this.driver = driver;

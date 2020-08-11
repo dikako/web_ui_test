@@ -2,10 +2,8 @@ package config;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -18,10 +16,7 @@ public class Setup {
 
 	@BeforeMethod
 	public void set() throws MalformedURLException {
-		Map<String, String> mobileEmulation = new HashMap<String, String>();
-		mobileEmulation.put("deviceName", "Galaxy S5");
-		ChromeOptions handlessOptions = new ChromeOptions();
-		handlessOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+		FirefoxOptions handlessOptions = new FirefoxOptions();
 		handlessOptions.addArguments("enable-automation");
 		handlessOptions.addArguments("--no-sandbox");
 		handlessOptions.addArguments("--disable-infobars");
@@ -32,8 +27,8 @@ public class Setup {
 		URL url = new URL("http://172.31.0.70:4444/wd/hub");
 //		 URL url = new URL("http://localhost:4444/wd/hub");
 //		 URL url = new URL("http://selenium.mncplus.com/wd/hub");
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setCapability(ChromeOptions.CAPABILITY, handlessOptions);
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, handlessOptions);
 		handlessOptions.merge(capabilities);
 		driver = new RemoteWebDriver(url, handlessOptions);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
